@@ -10,7 +10,7 @@ import {
   ScrollArea,
   useComponentDefaultProps,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineTheme,
 } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
@@ -54,7 +54,7 @@ export interface PrismProps
   trim?: boolean;
 
   /** Key of theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Provide custom color scheme */
   getPrismTheme?(theme: MantineTheme, colorScheme: 'light' | 'dark'): PrismTheme;

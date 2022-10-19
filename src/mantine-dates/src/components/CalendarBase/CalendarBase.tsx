@@ -1,6 +1,6 @@
 import React, { useRef, useState, forwardRef } from 'react';
 import { useUncontrolled } from '@mantine/hooks';
-import { Box, MantineSize, Selectors, DefaultProps } from '@mantine/core';
+import { Box, DefaultMantineSize, Selectors, DefaultProps } from '@mantine/core';
 import { MonthSettings, DayKeydownPayload } from '../Month';
 import { YearPicker, YearPickerStylesNames } from './YearPicker/YearPicker';
 import { MonthPicker, MonthPickerStylesNames } from './MonthPicker/MonthPicker';
@@ -36,7 +36,7 @@ export interface CalendarSharedProps extends DefaultProps<CalendarBaseStylesName
   value?: Date | Date[] | null;
 
   /** Calendar size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Allow to change level (date – month – year) */
   allowLevelChange?: boolean;

@@ -2,7 +2,7 @@ import React, { forwardRef, Children } from 'react';
 import {
   DefaultProps,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   CSSObject,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -23,7 +23,7 @@ export interface TimelineProps
   color?: MantineColor;
 
   /** Radius from theme.radius, or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Bullet size in px */
   bulletSize?: number;

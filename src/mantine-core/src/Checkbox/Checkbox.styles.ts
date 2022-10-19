@@ -1,4 +1,9 @@
-import { createStyles, MantineSize, MantineColor, MantineNumberSize } from '@mantine/styles';
+import {
+  createStyles,
+  DefaultMantineSize,
+  MantineColor,
+  DefaultMantineNumberSize,
+} from '@mantine/styles';
 
 const sizes = {
   xs: 16,
@@ -17,8 +22,8 @@ const iconSizes = {
 };
 
 export interface CheckboxStylesParams {
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
   color: MantineColor;
   transitionDuration: number;
   labelPosition: 'left' | 'right';

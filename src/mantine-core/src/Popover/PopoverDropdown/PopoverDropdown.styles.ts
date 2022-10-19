@@ -1,7 +1,7 @@
-import { createStyles, MantineShadow, MantineNumberSize } from '@mantine/styles';
+import { createStyles, MantineShadow, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface PopoverStylesParams {
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
   shadow?: MantineShadow;
 }
 

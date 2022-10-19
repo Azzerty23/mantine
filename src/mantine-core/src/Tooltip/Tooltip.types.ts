@@ -1,4 +1,4 @@
-import { DefaultProps, Selectors, MantineNumberSize, MantineColor } from '@mantine/styles';
+import { DefaultProps, Selectors, DefaultMantineNumberSize, MantineColor } from '@mantine/styles';
 import { FloatingPosition } from '../Floating';
 import useStyles, { TooltipStylesParams } from './Tooltip.styles';
 
@@ -23,7 +23,7 @@ export interface TooltipBaseProps
   withinPortal?: boolean;
 
   /** Radius from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Key of theme.colors */
   color?: MantineColor;

@@ -3,8 +3,8 @@ import {
   DefaultProps,
   MantineColor,
   Selectors,
-  MantineSize,
-  MantineNumberSize,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
 } from '@mantine/styles';
 import { Text } from '../../Text';
 import { Loader } from '../../Loader';
@@ -49,10 +49,10 @@ export interface StepProps
   iconPosition?: 'right' | 'left';
 
   /** Component size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Radius from theme.radius, or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Indicates loading state on step */
   loading?: boolean;

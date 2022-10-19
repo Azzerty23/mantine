@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { Box } from '../Box';
 import useStyles, { TableStylesParams } from './Table.styles';
 
@@ -16,13 +16,13 @@ export interface TableProps
   captionSide?: 'top' | 'bottom';
 
   /** Horizontal cells spacing from theme.spacing or number to set value in px */
-  horizontalSpacing?: MantineNumberSize;
+  horizontalSpacing?: DefaultMantineNumberSize;
 
   /** Vertical cells spacing from theme.spacing or number to set value in px */
-  verticalSpacing?: MantineNumberSize;
+  verticalSpacing?: DefaultMantineNumberSize;
 
   /** Sets font size of all text inside table */
-  fontSize?: MantineNumberSize;
+  fontSize?: DefaultMantineNumberSize;
 
   /** Add border to table */
   withBorder?: boolean;

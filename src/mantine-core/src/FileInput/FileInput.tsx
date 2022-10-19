@@ -1,5 +1,5 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import { useUncontrolled } from '@mantine/hooks';
 import {
   Input,
@@ -36,7 +36,7 @@ export interface FileInputProps<Multiple extends boolean = false>
   defaultValue?: Multiple extends true ? File[] : File | null;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Determines whether user can pick more than one file */
   multiple?: Multiple;

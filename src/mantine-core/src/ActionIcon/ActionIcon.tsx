@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   Selectors,
   useComponentDefaultProps,
@@ -29,10 +29,10 @@ export interface ActionIconProps
   gradient?: MantineGradient;
 
   /** Button border-radius from theme or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Predefined icon size or number to set width and height in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Props spread to Loader component */
   loaderProps?: LoaderProps;

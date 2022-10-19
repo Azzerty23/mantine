@@ -1,9 +1,9 @@
-import { createStyles, MantineNumberSize, MantineColor } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineColor } from '@mantine/styles';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
 
 interface MarksStyles {
   color: MantineColor;
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   disabled: boolean;
 }
 

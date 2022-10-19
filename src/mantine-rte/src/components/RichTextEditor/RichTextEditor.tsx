@@ -6,7 +6,7 @@ import {
   DefaultProps,
   Selectors,
   Box,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
 } from '@mantine/core';
 import { useId, mergeRefs } from '@mantine/hooks';
@@ -72,7 +72,7 @@ export interface RichTextEditorProps
   stickyOffset?: number | string;
 
   /** Radius from theme.radius, or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Make quill editor read only */
   readOnly?: boolean;

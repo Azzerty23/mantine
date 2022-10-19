@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 import {
   DefaultProps,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   Selectors,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -58,7 +58,7 @@ export interface NavLinkProps extends DefaultProps<NavLinkStylesNames, NavLinkSt
   disableRightSectionRotation?: boolean;
 
   /** Key of theme.spacing or number to set collapsed links padding-left in px */
-  childrenOffset?: MantineNumberSize;
+  childrenOffset?: DefaultMantineNumberSize;
 
   /** Adds disabled styles to root element */
   disabled?: boolean;

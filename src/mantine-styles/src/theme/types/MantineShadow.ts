@@ -1,3 +1,3 @@
-import type { MantineSize } from './MantineSize';
+import type { DefaultMantineSize } from './MantineSize';
 
-export type MantineShadow = MantineSize | (string & {});
+export type MantineShadow = DefaultMantineSize | (string & {});

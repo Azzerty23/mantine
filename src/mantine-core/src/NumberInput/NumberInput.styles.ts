@@ -1,8 +1,8 @@
-import { createStyles, MantineNumberSize, MantineSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, DefaultMantineSize } from '@mantine/styles';
 
 export interface NumberInputStylesParams {
-  radius: MantineNumberSize;
-  size: MantineSize;
+  radius: DefaultMantineNumberSize;
+  size: DefaultMantineSize;
 }
 
 export const CONTROL_SIZES = {

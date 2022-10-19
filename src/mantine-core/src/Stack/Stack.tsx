@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-prop-types */
 import React, { forwardRef } from 'react';
-import { DefaultProps, useComponentDefaultProps, MantineNumberSize } from '@mantine/styles';
+import { DefaultProps, useComponentDefaultProps, DefaultMantineNumberSize } from '@mantine/styles';
 import { Box } from '../Box';
 import useStyles, { StackStylesParams } from './Stack.styles';
 
@@ -8,7 +8,7 @@ export interface StackProps
   extends DefaultProps<never, StackStylesParams>,
     React.ComponentPropsWithoutRef<'div'> {
   /** Key of theme.spacing or number to set gap in px */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** align-items CSS property */
   align?: React.CSSProperties['alignItems'];

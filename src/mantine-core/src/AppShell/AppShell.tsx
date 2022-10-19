@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import {
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   DefaultProps,
   Selectors,
   MantineStyleSystemSize,
@@ -40,13 +40,13 @@ export interface AppShellProps
   children: React.ReactNode;
 
   /** Content padding */
-  padding?: MantineNumberSize;
+  padding?: DefaultMantineNumberSize;
 
   /** Breakpoint at which Navbar component should no longer be offset with padding-left, applicable only for fixed position */
-  navbarOffsetBreakpoint?: MantineNumberSize;
+  navbarOffsetBreakpoint?: DefaultMantineNumberSize;
 
   /** Breakpoint at which Aside component should no longer be offset with padding-right, applicable only for fixed position */
-  asideOffsetBreakpoint?: MantineNumberSize;
+  asideOffsetBreakpoint?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<AppShellProps> = {

@@ -6,7 +6,7 @@ import {
   DefaultProps,
   UnstyledButton,
   ChevronIcon,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   StylesApiProvider,
   Selectors,
 } from '@mantine/core';
@@ -46,13 +46,13 @@ export interface CarouselProps
   controlSize?: number;
 
   /** Key of theme.spacing or number to set space between next/previous control and carousel boundary */
-  controlsOffset?: MantineNumberSize;
+  controlsOffset?: DefaultMantineNumberSize;
 
   /** Slide width, defaults to 100%, examples: 200px, 50% */
   slideSize?: string | number;
 
   /** Key of theme.spacing or number to set gap between slides in px */
-  slideGap?: MantineNumberSize;
+  slideGap?: DefaultMantineNumberSize;
 
   /** Control slideSize and slideGap at different viewport sizes */
   breakpoints?: CarouselBreakpoint[];

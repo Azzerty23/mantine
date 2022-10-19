@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize, keyframes } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, keyframes } from '@mantine/styles';
 
 export interface SkeletonStylesParams {
   height: number | string;
   width: number | string;
   circle: boolean;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   animate: boolean;
 }
 

@@ -1,9 +1,9 @@
-import { createStyles, MantineNumberSize, MantineTheme } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize, MantineTheme } from '@mantine/core';
 
 const BREAKPOINT = 885;
 
 interface ConfiguratorStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   background: string;
 }
 

@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   Selectors,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -20,7 +20,7 @@ export interface BurgerProps
   color?: string;
 
   /** Predefined burger size or number to set width and height in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Transition duration in ms */
   transitionDuration?: number;

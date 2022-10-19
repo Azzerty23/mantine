@@ -1,10 +1,10 @@
-import { MantineSize } from '@mantine/styles';
+import { DefaultMantineSize } from '@mantine/styles';
 import { createContext, useContext } from 'react';
 
 interface CheckboxGroupContextValue {
   value: string[];
   onChange(event: React.ChangeEvent<HTMLInputElement>): void;
-  size: MantineSize;
+  size: DefaultMantineSize;
 }
 
 const CheckboxGroupContext = createContext<CheckboxGroupContextValue>(null);

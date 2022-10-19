@@ -1,7 +1,7 @@
-import { createStyles, MantineSize } from '@mantine/styles';
+import { createStyles, DefaultMantineSize } from '@mantine/styles';
 
 export interface ColorPickerStylesParams {
-  size: MantineSize;
+  size: DefaultMantineSize;
   fullWidth: boolean;
 }
 

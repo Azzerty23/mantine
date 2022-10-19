@@ -7,7 +7,7 @@ import {
   MantineTransition,
   InputStylesNames,
   InputWrapperStylesNames,
-  MantineSize,
+  DefaultMantineSize,
   Modal,
   CloseButton,
   MantineShadow,
@@ -57,7 +57,7 @@ export interface DatePickerBaseSharedProps
   name?: string;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Where to show calendar in modal or popover */
   dropdownType?: 'popover' | 'modal';

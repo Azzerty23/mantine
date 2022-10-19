@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import { useId } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineSize,
+  DefaultMantineSize,
   MantineColor,
   Selectors,
   extractSystemStyles,
@@ -31,7 +31,7 @@ export interface RadioProps
   color?: MantineColor;
 
   /** Predefined label fontSize, radio width, height and border-radius */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Replace default icon */
   icon?: React.FC<React.ComponentPropsWithoutRef<'svg'>>;

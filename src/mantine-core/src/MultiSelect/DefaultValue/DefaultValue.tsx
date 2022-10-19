@@ -1,5 +1,10 @@
 import React from 'react';
-import { DefaultProps, MantineSize, MantineNumberSize, Selectors } from '@mantine/styles';
+import {
+  DefaultProps,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
+  Selectors,
+} from '@mantine/styles';
 import { CloseButton } from '../../CloseButton';
 import useStyles from './DefaultValue.styles';
 
@@ -12,8 +17,8 @@ export interface MultiSelectValueProps
   onRemove(): void;
   disabled: boolean;
   readOnly: boolean;
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
 }
 
 const buttonSizes = {

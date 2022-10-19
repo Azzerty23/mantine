@@ -7,7 +7,7 @@ import {
   Group,
   Center,
   Text,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
 } from '@mantine/core';
 import type { SpotlightAction } from '../types';
@@ -24,7 +24,7 @@ export interface DefaultActionProps
   highlightQuery: boolean;
   highlightColor: MantineColor;
   query: string;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export function DefaultAction({

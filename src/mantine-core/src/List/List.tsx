@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   Selectors,
   useComponentDefaultProps,
   StylesApiProvider,
@@ -27,13 +27,13 @@ export interface ListProps
   withPadding?: boolean;
 
   /** Font size from theme or number to set value in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Icon that should replace list item dot */
   icon?: React.ReactNode;
 
   /** Spacing between items from theme or number to set value in px */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Center items with icon */
   center?: boolean;

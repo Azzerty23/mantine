@@ -4,7 +4,7 @@ import {
   MantineGradient,
   useComponentDefaultProps,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
 } from '@mantine/styles';
 import { createPolymorphicComponent } from '@mantine/utils';
 import { Box } from '../Box';
@@ -15,7 +15,7 @@ export interface TextProps extends DefaultProps {
   children?: React.ReactNode;
 
   /** Key of theme.fontSizes or number to set font-size in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Key of theme.colors or any valid CSS color */
   color?: 'dimmed' | MantineColor;

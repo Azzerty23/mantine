@@ -1,8 +1,8 @@
-import type { MantineNumberSize } from '@mantine/styles';
+import type { DefaultMantineNumberSize } from '@mantine/styles';
 import { createContext, useContext } from 'react';
 
 interface GridContextValue {
-  gutter: MantineNumberSize;
+  gutter: DefaultMantineNumberSize;
   grow: boolean;
   columns: number;
 }

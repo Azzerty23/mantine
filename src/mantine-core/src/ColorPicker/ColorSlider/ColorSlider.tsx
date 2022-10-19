@@ -6,7 +6,7 @@ import {
   UseMovePosition,
   useMergedRef,
 } from '@mantine/hooks';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import { Box } from '../../Box';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
 import useStyles from './ColorSlider.styles';
@@ -21,7 +21,7 @@ export interface BaseColorSliderProps
   value: number;
   onChange(value: number): void;
   onChangeEnd(value: number): void;
-  size?: MantineSize;
+  size?: DefaultMantineSize;
   focusable?: boolean;
   __staticSelector?: string;
 }

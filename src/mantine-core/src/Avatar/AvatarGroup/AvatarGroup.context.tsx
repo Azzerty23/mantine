@@ -1,8 +1,8 @@
 import React, { createContext, useContext } from 'react';
-import { MantineNumberSize } from '@mantine/styles';
+import { DefaultMantineNumberSize } from '@mantine/styles';
 
 interface ContextValue {
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
 }
 
 const AvatarGroupContext = createContext<ContextValue>(null);

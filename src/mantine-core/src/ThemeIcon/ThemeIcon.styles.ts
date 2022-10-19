@@ -1,11 +1,16 @@
-import { createStyles, MantineNumberSize, MantineColor, MantineGradient } from '@mantine/styles';
+import {
+  createStyles,
+  DefaultMantineNumberSize,
+  MantineColor,
+  MantineGradient,
+} from '@mantine/styles';
 
 export type ThemeIconVariant = 'filled' | 'light' | 'gradient' | 'outline' | 'default';
 
 export interface ThemeIconStylesParams {
   color: MantineColor;
-  size: MantineNumberSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineNumberSize;
+  radius: DefaultMantineNumberSize;
   variant: ThemeIconVariant;
   gradient: MantineGradient;
 }

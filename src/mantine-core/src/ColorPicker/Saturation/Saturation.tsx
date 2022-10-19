@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useMove, clampUseMovePosition, UseMovePosition } from '@mantine/hooks';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import { HsvaColor } from '../types';
 import { Thumb, ThumbStylesNames } from '../Thumb/Thumb';
 import useStyles from './Saturation.styles';
@@ -15,7 +15,7 @@ interface SaturationProps extends DefaultProps<SaturationStylesNames> {
   onChange(color: Partial<HsvaColor>): void;
   onChangeEnd(color: Partial<HsvaColor>): void;
   saturationLabel?: string;
-  size: MantineSize;
+  size: DefaultMantineSize;
   color: string;
   focusable?: boolean;
   __staticSelector?: string;

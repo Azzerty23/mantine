@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, getDefaultZIndex, Global } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, getDefaultZIndex, Global } from '@mantine/styles';
 import { Box } from '../../Box';
 import { useAppShellContext } from '../AppShell.context';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
@@ -28,7 +28,7 @@ export interface HorizontalSectionSharedProps extends DefaultProps {
   position?: HorizontalSectionPosition;
 
   /** Breakpoint at which component will be hidden if hidden prop is true */
-  hiddenBreakpoint?: MantineNumberSize;
+  hiddenBreakpoint?: DefaultMantineNumberSize;
 
   /** Set to true to hide component at hiddenBreakpoint */
   hidden?: boolean;

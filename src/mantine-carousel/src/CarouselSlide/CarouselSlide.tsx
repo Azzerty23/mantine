@@ -3,7 +3,7 @@ import {
   Box,
   DefaultProps,
   Selectors,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useContextStylesApi,
 } from '@mantine/core';
 import { useCarouselContext } from '../Carousel.context';
@@ -19,7 +19,7 @@ export interface CarouselSlideProps extends DefaultProps, React.ComponentPropsWi
   size?: string | number;
 
   /** Key of theme.spacing or number to set gap between slides in px */
-  gap?: MantineNumberSize;
+  gap?: DefaultMantineNumberSize;
 }
 
 export const CarouselSlide = forwardRef<HTMLDivElement, CarouselSlideProps>(

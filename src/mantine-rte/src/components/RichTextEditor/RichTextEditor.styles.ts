@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/core';
 
 export interface RichTextEditorStylesParams {
   saveLabel: string;
   editLabel: string;
   removeLabel: string;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   readOnly: boolean;
 }
 

@@ -1,4 +1,4 @@
-import { createStyles, MantineSize } from '@mantine/core';
+import { createStyles, DefaultMantineSize } from '@mantine/core';
 
 export const inputSizes = {
   xs: 20,
@@ -9,7 +9,7 @@ export const inputSizes = {
 };
 
 interface TimeInputBaseStyles {
-  size: MantineSize;
+  size: DefaultMantineSize;
   hasValue: boolean;
 }
 

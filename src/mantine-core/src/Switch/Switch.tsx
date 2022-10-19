@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import { useId, useUncontrolled } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   MantineColor,
   Selectors,
   extractSystemStyles,
@@ -37,10 +37,10 @@ export interface SwitchProps
   color?: MantineColor;
 
   /** Predefined size value */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Radius from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Props spread to wrapper element */
   wrapperProps?: Record<string, any>;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, MantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
 import { Box } from '../../Box';
 import { getPosition } from '../utils/get-position/get-position';
 import { isMarkFilled } from './is-mark-filled';
@@ -9,7 +9,7 @@ export type MarksStylesNames = Selectors<typeof useStyles>;
 
 export interface MarksProps extends DefaultProps<MarksStylesNames> {
   marks: { value: number; label?: React.ReactNode }[];
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   color: MantineColor;
   min: number;
   max: number;

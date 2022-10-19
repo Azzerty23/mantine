@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   Selectors,
   extractSystemStyles,
   useComponentDefaultProps,
@@ -41,7 +41,7 @@ export interface InputSharedProps {
   required?: boolean;
 
   /** Input border-radius from theme or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Defines input appearance, defaults to default in light color scheme and filled in dark */
   variant?: InputVariant;
@@ -50,7 +50,7 @@ export interface InputSharedProps {
   disabled?: boolean;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 }
 
 export interface InputProps extends InputSharedProps, DefaultProps<InputStylesNames> {

@@ -1,8 +1,8 @@
-import { createStyles, MantineNumberSize, MantineColor } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineColor } from '@mantine/styles';
 
 export interface PaginationStylesParams {
-  size: MantineNumberSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineNumberSize;
+  radius: DefaultMantineNumberSize;
   color: MantineColor;
 }
 

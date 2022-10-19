@@ -1,7 +1,7 @@
 import {
   createStyles,
-  MantineSize,
-  MantineNumberSize,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
   MantineColor,
   MantineTheme,
   MantineGradient,
@@ -23,8 +23,8 @@ export type ButtonVariant = typeof BUTTON_VARIANTS[number];
 
 export interface ButtonStylesParams {
   color: MantineColor;
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
   fullWidth: boolean;
   compact: boolean;
   gradient: MantineGradient;
@@ -48,7 +48,7 @@ export const sizes = {
 
 interface GetSizeStyles {
   compact: boolean;
-  size: MantineSize;
+  size: DefaultMantineSize;
   withLeftIcon: boolean;
   withRightIcon: boolean;
 }

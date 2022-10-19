@@ -1,8 +1,8 @@
-import { createStyles, MantineNumberSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/core';
 
 export interface DropzoneStylesParams {
-  padding: MantineNumberSize;
-  radius: MantineNumberSize;
+  padding: DefaultMantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export default createStyles((theme, { padding, radius }: DropzoneStylesParams) => {

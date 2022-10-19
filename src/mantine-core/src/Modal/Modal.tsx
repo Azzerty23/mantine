@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useScrollLock, useFocusTrap, useFocusReturn, useId } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineShadow,
   Selectors,
   MantineStyleSystemSize,
@@ -54,7 +54,7 @@ export interface ModalProps
   fullScreen?: boolean;
 
   /** Modal radius */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Modal body width */
   size?: string | number;
@@ -78,7 +78,7 @@ export interface ModalProps
   shadow?: MantineShadow;
 
   /** Modal padding from theme or number value for padding in px */
-  padding?: MantineNumberSize;
+  padding?: DefaultMantineNumberSize;
 
   /** Should modal be closed when outside click was registered? */
   closeOnClickOutside?: boolean;

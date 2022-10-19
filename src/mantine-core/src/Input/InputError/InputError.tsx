@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import { Text } from '../../Text';
 import useStyles, { InputErrorStylesParams } from './InputError.styles';
 
@@ -12,7 +12,7 @@ export interface InputErrorProps
   children?: React.ReactNode;
 
   /** Predefined size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   __staticSelector?: string;
 }

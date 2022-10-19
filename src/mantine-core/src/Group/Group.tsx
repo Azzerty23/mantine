@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { Box } from '../Box';
 import { filterFalsyChildren } from './filter-falsy-children/filter-falsy-children';
 import useStyles, { GroupPosition } from './Group.styles';
@@ -15,7 +15,7 @@ export interface GroupProps extends DefaultProps, React.ComponentPropsWithoutRef
   grow?: boolean;
 
   /** Space between elements */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Defines align-items css property */
   align?: React.CSSProperties['alignItems'];

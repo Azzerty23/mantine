@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 interface AvatarGroupStylesParams {
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
 }
 
 export default createStyles((theme, { spacing }: AvatarGroupStylesParams) => ({

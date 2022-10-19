@@ -4,7 +4,7 @@ import {
   Selectors,
   DefaultProps,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
   getDefaultZIndex,
 } from '@mantine/styles';
@@ -42,7 +42,7 @@ export interface IndicatorProps
   dot?: boolean;
 
   /** border-radius from theme.radius or number value to set radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Color from theme.colors or any other valid CSS color value */
   color?: MantineColor;

@@ -2,7 +2,7 @@ import React, { useRef, useState, forwardRef, useEffect } from 'react';
 import { useMove, useUncontrolled, useMergedRef } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   useMantineTheme,
   useComponentDefaultProps,
@@ -31,10 +31,10 @@ export interface RangeSliderProps
   color?: MantineColor;
 
   /** Track border-radius from theme or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Predefined track and thumb size, number to set sizes in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Minimal possible value */
   min?: number;

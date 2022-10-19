@@ -6,7 +6,7 @@ import {
   InputWrapperStylesNames,
   DefaultProps,
   Input,
-  MantineSize,
+  DefaultMantineSize,
   Selectors,
   CloseButton,
   extractSystemStyles,
@@ -32,7 +32,7 @@ export interface TimeInputProps
     InputWrapperBaseProps,
     Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Controlled input value */
   value?: Date | null;

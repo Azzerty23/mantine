@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, Selectors, UnstyledButton, MantineSize } from '@mantine/core';
+import { DefaultProps, Selectors, UnstyledButton, DefaultMantineSize } from '@mantine/core';
 import { getMonthsNames } from '../../../utils';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import { isMonthInRange } from './is-month-in-range/is-month-in-range';
@@ -17,7 +17,7 @@ export interface MonthPickerProps
   year: number;
   onYearChange(year: number): void;
   onNextLevel(): void;
-  size?: MantineSize;
+  size?: DefaultMantineSize;
   minDate?: Date;
   maxDate?: Date;
   __staticSelector?: string;

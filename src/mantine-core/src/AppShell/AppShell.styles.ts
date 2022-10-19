@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize, MantineTheme, CSSObject } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineTheme, CSSObject } from '@mantine/styles';
 
 export interface AppShellStylesParams {
-  padding: MantineNumberSize;
+  padding: DefaultMantineNumberSize;
   fixed: boolean;
-  navbarOffsetBreakpoint: MantineNumberSize;
-  asideOffsetBreakpoint: MantineNumberSize;
+  navbarOffsetBreakpoint: DefaultMantineNumberSize;
+  asideOffsetBreakpoint: DefaultMantineNumberSize;
 }
 
 function getPositionStyles(props: AppShellStylesParams, theme: MantineTheme): CSSObject {

@@ -3,7 +3,7 @@ import {
   DefaultProps,
   MantineColor,
   Selectors,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
 } from '@mantine/styles';
 import { Text } from '../Text';
@@ -24,7 +24,7 @@ export interface NotificationProps
   color?: MantineColor;
 
   /** Radius from theme.radius, or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Notification icon, replaces color line */
   icon?: React.ReactNode;

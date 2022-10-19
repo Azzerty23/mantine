@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   Selectors,
   useComponentDefaultProps,
@@ -30,10 +30,10 @@ export interface ProgressProps
   color?: MantineColor;
 
   /** Predefined progress height or number for height in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Predefined progress radius from theme.radius or number for height in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Adds stripes */
   striped?: boolean;

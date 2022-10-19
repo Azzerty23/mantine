@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface StackStylesParams {
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
   align: React.CSSProperties['alignItems'];
   justify: React.CSSProperties['justifyContent'];
 }

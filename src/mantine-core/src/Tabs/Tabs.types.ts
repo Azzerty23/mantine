@@ -1,4 +1,4 @@
-import { MantineColor, MantineNumberSize } from '@mantine/styles';
+import { MantineColor, DefaultMantineNumberSize } from '@mantine/styles';
 
 export type TabsValue = string | null;
 export type TabsOrientation = 'horizontal' | 'vertical';
@@ -10,7 +10,7 @@ export interface TabsStylesParams {
   placement: TabsPlacement;
   orientation: TabsOrientation;
   color?: MantineColor;
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
   inverted: boolean;
   variant: TabsVariant;
 }

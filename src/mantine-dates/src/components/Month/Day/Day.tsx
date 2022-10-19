@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/core';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/core';
 import { getDayTabIndex } from './get-day-tab-index/get-day-tab-index';
 import { getDayAutofocus } from './get-day-autofocus/get-day-autofocus';
 import useStyles from './Day.styles';
@@ -19,7 +19,7 @@ export interface DayProps
   inRange: boolean;
   firstInRange: boolean;
   lastInRange: boolean;
-  size: MantineSize;
+  size: DefaultMantineSize;
   fullWidth: boolean;
   __staticSelector?: string;
   firstInMonth: boolean;

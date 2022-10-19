@@ -9,8 +9,8 @@ import {
 } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   MantineColor,
   Selectors,
   useComponentDefaultProps,
@@ -55,10 +55,10 @@ export interface SegmentedControlProps
   color?: MantineColor;
 
   /** Controls font-size, paddings and height */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Border-radius from theme or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Transition duration in ms, set to 0 to turn off transitions */
   transitionDuration?: number;

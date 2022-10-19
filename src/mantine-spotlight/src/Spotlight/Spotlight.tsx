@@ -10,7 +10,7 @@ import {
   MantineShadow,
   TextInput,
   getDefaultZIndex,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   TextInputProps,
 } from '@mantine/core';
@@ -49,7 +49,7 @@ export interface InnerSpotlightProps
   shadow?: MantineShadow;
 
   /** Radius from theme.radius, or number to set border-radius in px, defaults to theme.defaultRadius */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Should spotlight be rendered in the center of the screen */
   centered?: boolean;

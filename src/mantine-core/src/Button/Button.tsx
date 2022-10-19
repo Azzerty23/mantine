@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineSize,
-  MantineNumberSize,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
   MantineGradient,
   MantineColor,
   Selectors,
@@ -18,7 +18,7 @@ export type ButtonStylesNames = Selectors<typeof useStyles>;
 
 export interface ButtonProps extends DefaultProps<ButtonStylesNames, ButtonStylesParams> {
   /** Predefined button size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Button type attribute */
   type?: 'submit' | 'button' | 'reset';
@@ -36,7 +36,7 @@ export interface ButtonProps extends DefaultProps<ButtonStylesNames, ButtonStyle
   fullWidth?: boolean;
 
   /** Button border-radius from theme or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Controls button appearance */
   variant?: ButtonVariant;

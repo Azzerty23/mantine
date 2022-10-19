@@ -3,7 +3,7 @@ import {
   ActionIcon,
   UnstyledButton,
   SelectChevronIcon,
-  MantineSize,
+  DefaultMantineSize,
   Selectors,
   DefaultProps,
 } from '@mantine/core';
@@ -22,7 +22,7 @@ export interface CalendarHeaderProps
   onNextLevel?(): void;
   label?: string;
   nextLevelDisabled?: boolean;
-  size?: MantineSize;
+  size?: DefaultMantineSize;
   __staticSelector?: string;
   nextLabel?: string;
   previousLabel?: string;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DefaultProps, Selectors, UnstyledButton, MantineSize } from '@mantine/core';
+import { DefaultProps, Selectors, UnstyledButton, DefaultMantineSize } from '@mantine/core';
 import { getDecadeRange } from './get-decade-range/get-decade-range';
 import { CalendarHeader, CalendarHeaderStylesNames } from '../CalendarHeader/CalendarHeader';
 import { formatYear } from '../format-year';
@@ -14,7 +14,7 @@ export interface YearPickerProps
   onChange(value: number): void;
   minYear?: number;
   maxYear?: number;
-  size?: MantineSize;
+  size?: DefaultMantineSize;
   __staticSelector?: string;
   nextDecadeLabel?: string;
   previousDecadeLabel?: string;

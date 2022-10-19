@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import {
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   DefaultProps,
   getDefaultZIndex,
   useComponentDefaultProps,
@@ -26,7 +26,7 @@ export interface OverlayProps extends DefaultProps<never, OverlayStylesParams> {
   zIndex?: React.CSSProperties['zIndex'];
 
   /** Value from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<OverlayProps> = {

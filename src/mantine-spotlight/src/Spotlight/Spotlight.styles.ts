@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/core';
 
 export interface SpotlightStylesParams {
   centered: boolean;
   maxWidth: number;
   topOffset: number;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   zIndex: React.CSSProperties['zIndex'];
 }
 

@@ -2,8 +2,8 @@ import React, { forwardRef, useRef, useEffect, useState } from 'react';
 import { useUncontrolled, useId } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   MantineColor,
   Group,
   Input,
@@ -24,16 +24,16 @@ export interface PinInputProps
   name?: string;
 
   /** Spacing between inputs */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Active input color from theme.colors */
   color?: MantineColor;
 
   /** Input border radius */
-  radius?: MantineSize;
+  radius?: DefaultMantineSize;
 
   /** Predefined label fontSize, radio width, height and border-radius */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** If `true`, the pin input receives focus on mount */
   autoFocus?: boolean;

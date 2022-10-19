@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineSize, useMantineTheme } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, useMantineTheme } from '@mantine/styles';
 import {
   InputWrapperBaseProps,
   InputWrapperStylesNames,
@@ -31,7 +31,7 @@ export interface NativeSelectProps
   wrapperProps?: Record<string, any>;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 }
 
 const defaultProps: Partial<NativeSelectProps> = {

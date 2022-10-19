@@ -1,8 +1,8 @@
-import { createStyles, MantineColor, MantineNumberSize } from '@mantine/styles';
+import { createStyles, MantineColor, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface NotificationStylesParams {
   color: MantineColor;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   withTitle: boolean;
 }
 

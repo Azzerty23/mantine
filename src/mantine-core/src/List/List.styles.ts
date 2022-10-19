@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface ListStylesParams {
   withPadding: boolean;
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   listStyleType: string;
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
   center: boolean;
 }
 

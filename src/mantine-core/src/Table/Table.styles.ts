@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface TableStylesParams {
   captionSide: 'top' | 'bottom';
-  horizontalSpacing: MantineNumberSize;
-  verticalSpacing: MantineNumberSize;
-  fontSize: MantineNumberSize;
+  horizontalSpacing: DefaultMantineNumberSize;
+  verticalSpacing: DefaultMantineNumberSize;
+  fontSize: DefaultMantineNumberSize;
   withBorder: boolean;
   withColumnBorders: boolean;
 }

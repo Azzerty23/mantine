@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-prop-types */
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import { Box } from '../../Box';
 import useStyles, { InputLabelStylesParams } from './InputLabel.styles';
 
@@ -19,7 +19,7 @@ export interface InputLabelProps
   required?: boolean;
 
   /** Predefined label size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   __staticSelector?: string;
 }

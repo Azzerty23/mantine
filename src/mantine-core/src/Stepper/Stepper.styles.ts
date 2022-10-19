@@ -1,14 +1,19 @@
-import { createStyles, MantineNumberSize, MantineColor, MantineSize } from '@mantine/styles';
+import {
+  createStyles,
+  DefaultMantineNumberSize,
+  MantineColor,
+  DefaultMantineSize,
+} from '@mantine/styles';
 import { iconSizes } from './Step/Step.styles';
 
 export interface StepperStylesParams {
-  contentPadding: MantineNumberSize;
+  contentPadding: DefaultMantineNumberSize;
   iconSize?: number;
-  size: MantineSize;
+  size: DefaultMantineSize;
   color: MantineColor;
   orientation: 'vertical' | 'horizontal';
   iconPosition: 'right' | 'left';
-  breakpoint: MantineNumberSize;
+  breakpoint: DefaultMantineNumberSize;
 }
 
 export default createStyles(

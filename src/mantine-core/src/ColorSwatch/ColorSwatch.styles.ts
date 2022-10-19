@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface ColorSwatchStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   size: number;
 }
 

@@ -1,4 +1,4 @@
-import { MantineNumberSize } from '@mantine/core';
+import { DefaultMantineNumberSize } from '@mantine/core';
 import { createSafeContext } from '@mantine/utils';
 import { CAROUSEL_ERRORS } from './Carousel.errors';
 import { CarouselOrientation, Embla, CarouselBreakpoint } from './types';
@@ -6,7 +6,7 @@ import { CarouselOrientation, Embla, CarouselBreakpoint } from './types';
 interface CarouselContext {
   embla: Embla;
   slideSize: string | number;
-  slideGap: MantineNumberSize;
+  slideGap: DefaultMantineNumberSize;
   orientation: CarouselOrientation;
   includeGapInSize: boolean;
   breakpoints: CarouselBreakpoint[];

@@ -1,4 +1,4 @@
-import { MantineNumberSize } from '@mantine/styles';
+import { DefaultMantineNumberSize } from '@mantine/styles';
 
 export type AccordionValue<Multiple extends boolean> = Multiple extends true
   ? string[]
@@ -10,5 +10,5 @@ export type AccordionVariant = 'default' | 'contained' | 'filled' | 'separated';
 
 export interface AccordionStylesParams {
   variant: AccordionVariant;
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 }

@@ -1,6 +1,6 @@
 import {
   createStyles,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   CSSObject,
   MantineTheme,
@@ -12,11 +12,11 @@ export const AVATAR_VARIANTS = ['filled', 'light', 'gradient', 'outline'] as con
 export type AvatarVariant = typeof AVATAR_VARIANTS[number];
 
 export interface AvatarStylesParams {
-  size: MantineNumberSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineNumberSize;
+  radius: DefaultMantineNumberSize;
   color: MantineColor;
   withinGroup: boolean;
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
   variant: AvatarVariant;
   gradient: MantineGradient;
 }
@@ -31,7 +31,7 @@ export const sizes = {
 
 interface GetGroupStylesInput {
   withinGroup: boolean;
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
   theme: MantineTheme;
 }
 

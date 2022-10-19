@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, MantineColor, Selectors, MantineNumberSize } from '@mantine/styles';
+import { DefaultProps, MantineColor, Selectors, DefaultMantineNumberSize } from '@mantine/styles';
 import { Text } from '../../Text';
 import { Box } from '../../Box';
 import useStyles from './TimelineItem.styles';
@@ -19,7 +19,7 @@ export interface TimelineItemProps
   bulletSize?: number;
 
   /** Radius from theme.radius, or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** React node that will be rendered after title */
   children?: React.ReactNode;

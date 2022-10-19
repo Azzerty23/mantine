@@ -1,15 +1,15 @@
 import {
   createStyles,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MANTINE_SIZES,
-  MantineSize,
+  DefaultMantineSize,
   MantineTheme,
 } from '@mantine/styles';
 
 export type ColSpan = number | 'auto' | 'content';
 
 interface ColStyles {
-  gutter: MantineNumberSize;
+  gutter: DefaultMantineNumberSize;
   columns: number;
   grow: boolean;
   offset: number;
@@ -67,9 +67,9 @@ function getBreakpointsStyles({
   columns,
   grow,
 }: {
-  sizes: Record<MantineSize, ColSpan>;
-  offsets: Record<MantineSize, number>;
-  orders: Record<MantineSize, React.CSSProperties['order']>;
+  sizes: Record<DefaultMantineSize, ColSpan>;
+  offsets: Record<DefaultMantineSize, number>;
+  orders: Record<DefaultMantineSize, React.CSSProperties['order']>;
   grow: boolean;
   theme: MantineTheme;
   columns: number;

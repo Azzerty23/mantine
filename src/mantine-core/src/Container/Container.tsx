@@ -1,22 +1,22 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
-  MantineSize,
+  DefaultMantineSizes,
 } from '@mantine/styles';
 import { Box } from '../Box';
 import useStyles from './Container.styles';
 
 export interface ContainerProps extends DefaultProps, React.ComponentPropsWithoutRef<'div'> {
   /** Predefined container max-width or number for max-width in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** If fluid is set to true, size prop is ignored and Container can expand to 100% of width */
   fluid?: boolean;
 
   /** Container sizes */
-  sizes?: Record<MantineSize, number>;
+  sizes?: DefaultMantineSizes;
 }
 
 const defaultProps: Partial<ContainerProps> = {

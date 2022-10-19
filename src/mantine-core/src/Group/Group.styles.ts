@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export type GroupPosition = 'right' | 'center' | 'left' | 'apart';
 
@@ -7,7 +7,7 @@ export interface GroupStylesParams {
   position: GroupPosition;
   noWrap: boolean;
   grow: boolean;
-  spacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
   align: React.CSSProperties['alignItems'];
   count: number;
 }

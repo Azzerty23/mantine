@@ -1,6 +1,6 @@
 import {
   createStyles,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   MantineTheme,
   MantineGradient,
@@ -20,8 +20,8 @@ export type ActionIconVariant = typeof ACTION_ICON_VARIANTS[number];
 
 export interface ActionIconStylesParams {
   color: MantineColor;
-  size: MantineNumberSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineNumberSize;
+  radius: DefaultMantineNumberSize;
   variant: ActionIconVariant;
   gradient: MantineGradient;
 }

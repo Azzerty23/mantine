@@ -1,9 +1,9 @@
-import { createStyles, MantineNumberSize, getSortedBreakpoints } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize, getSortedBreakpoints } from '@mantine/core';
 import { CarouselOrientation, CarouselBreakpoint } from '../types';
 
 export interface CarouselSlideStylesParams {
   size: string | number;
-  gap: MantineNumberSize;
+  gap: DefaultMantineNumberSize;
   orientation: CarouselOrientation;
   includeGapInSize: boolean;
   breakpoints: CarouselBreakpoint[];
@@ -15,7 +15,7 @@ export default createStyles(
     { size, gap, orientation, includeGapInSize, breakpoints = [] }: CarouselSlideStylesParams
   ) => {
     // Slide styles by slideGap and slideSize
-    const getSlideStyles = (slideGap: MantineNumberSize, slideSize: string | number) => {
+    const getSlideStyles = (slideGap: DefaultMantineNumberSize, slideSize: string | number) => {
       const slideGapValue = theme.fn.size({
         size: slideGap,
         sizes: theme.spacing,

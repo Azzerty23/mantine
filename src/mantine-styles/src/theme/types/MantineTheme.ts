@@ -1,5 +1,11 @@
 import type { CSSProperties } from 'react';
-import type { MantineSizes, MantineSize, MantineNumberSize } from './MantineSize';
+import type {
+  MantineThemeSizes,
+  DefaultMantineSize,
+  DefaultMantineSizes,
+  DefaultMantineNumberSize,
+  MantineNumberSize,
+} from './MantineSize';
 import type { DeepPartial } from './DeepPartial';
 import type { MantineThemeColors } from './MantineColor';
 import type { MantineGradient } from './MantineGradient';
@@ -43,7 +49,7 @@ interface MantineThemeFunctions {
   largerThan(breakpoint: MantineNumberSize): string;
   lighten(color: string, alpha: number): string;
   darken(color: string, alpha: number): string;
-  radius(size?: MantineNumberSize | (string & {})): string | number;
+  radius(size?: DefaultMantineNumberSize | (string & {})): string | number;
   variant(payload: VariantInput): VariantOutput;
   primaryShade(colorScheme?: ColorScheme): Shade;
   hover(hoverStyle: CSSObject): any;
@@ -54,7 +60,7 @@ export interface MantineTheme {
   dir: 'ltr' | 'rtl';
   primaryShade: Shade | MantinePrimaryShade;
   focusRing: 'auto' | 'always' | 'never';
-  defaultRadius: MantineNumberSize | (string & {});
+  defaultRadius: DefaultMantineNumberSize | (string & {});
   loader: LoaderType;
   dateFormat: string;
   colorScheme: ColorScheme;
@@ -70,11 +76,11 @@ export interface MantineTheme {
   cursorType: 'default' | 'pointer';
   defaultGradient: MantineGradient;
 
-  fontSizes: MantineSizes;
-  radius: MantineSizes;
-  spacing: MantineSizes;
-  breakpoints: MantineSizes;
-  shadows: Record<MantineSize, string>;
+  fontSizes: DefaultMantineSizes;
+  radius: DefaultMantineSizes;
+  spacing: DefaultMantineSizes;
+  breakpoints: MantineThemeSizes;
+  shadows: Record<DefaultMantineSize, string>;
 
   headings: {
     fontFamily: CSSProperties['fontFamily'];
@@ -107,5 +113,7 @@ interface ThemeComponent {
 
 export type MantineThemeBase = Omit<MantineTheme, 'fn'>;
 
-export type MantineThemeOverride = DeepPartial<Omit<MantineThemeBase, 'other' | 'components'>> &
-  Partial<Pick<MantineThemeBase, 'other' | 'components'>>;
+export type MantineThemeOverride = DeepPartial<
+  Omit<MantineThemeBase, 'other' | 'components' | 'breakpoints'>
+> &
+  Partial<Pick<MantineThemeBase, 'other' | 'components' | 'breakpoints'>>;

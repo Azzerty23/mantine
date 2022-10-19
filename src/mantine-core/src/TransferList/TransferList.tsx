@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { RenderList, RenderListStylesNames } from './RenderList/RenderList';
 import { SelectScrollArea } from '../Select/SelectScrollArea/SelectScrollArea';
 import { DefaultItem } from './DefaultItem/DefaultItem';
@@ -43,10 +43,10 @@ export interface TransferListProps
   listComponent?: any;
 
   /** Breakpoint at which list will collapse to single column layout */
-  breakpoint?: MantineNumberSize;
+  breakpoint?: DefaultMantineNumberSize;
 
   /** Predefined border-radius value from theme.radius or number for border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Whether to hide the transfer all button */
   showTransferAll?: boolean;

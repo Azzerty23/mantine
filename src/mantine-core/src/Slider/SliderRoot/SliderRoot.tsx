@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { MantineNumberSize, DefaultProps, Selectors } from '@mantine/styles';
+import { DefaultMantineNumberSize, DefaultProps, Selectors } from '@mantine/styles';
 import { Box } from '../../Box';
 import useStyles from './SliderRoot.styles';
 
@@ -8,7 +8,7 @@ export type SliderRootStylesNames = Selectors<typeof useStyles>;
 export interface SliderRootProps
   extends DefaultProps<SliderRootStylesNames>,
     React.ComponentPropsWithoutRef<'div'> {
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   children: React.ReactNode;
   disabled: boolean;
 }

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineSize } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize } from '@mantine/styles';
 import {
   Input,
   InputSharedProps,
@@ -23,7 +23,7 @@ export interface TextInputProps
   wrapperProps?: Record<string, any>;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   __staticSelector?: string;
 }

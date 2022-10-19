@@ -1,7 +1,7 @@
-import { createStyles, MantineSize } from '@mantine/styles';
+import { createStyles, DefaultMantineSize } from '@mantine/styles';
 
 export interface InputErrorStylesParams {
-  size: MantineSize;
+  size: DefaultMantineSize;
 }
 
 export default createStyles((theme, { size }: InputErrorStylesParams) => ({

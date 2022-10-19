@@ -2,8 +2,8 @@ import React, { forwardRef, Children, cloneElement } from 'react';
 import {
   MantineColor,
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   Selectors,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -40,7 +40,7 @@ export interface StepperProps
   iconSize?: number;
 
   /** Content padding-top from theme.spacing or number to set value in px */
-  contentPadding?: MantineNumberSize;
+  contentPadding?: DefaultMantineNumberSize;
 
   /** Component orientation */
   orientation?: 'vertical' | 'horizontal';
@@ -49,13 +49,13 @@ export interface StepperProps
   iconPosition?: 'right' | 'left';
 
   /** Component size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Radius from theme.radius, or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Breakpoint at which orientation will change from horizontal to vertical */
-  breakpoint?: MantineNumberSize;
+  breakpoint?: DefaultMantineNumberSize;
 }
 
 type StepperComponent = ForwardRefWithStaticComponents<

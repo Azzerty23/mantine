@@ -1,7 +1,7 @@
 import React, { useEffect, useState, forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   Selectors,
   useComponentDefaultProps,
@@ -24,10 +24,10 @@ export interface AvatarProps extends DefaultProps<AvatarStylesNames, AvatarStyle
   alt?: string;
 
   /** Avatar width and height */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Value from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Color from theme.colors used for letter and icon placeholders */
   color?: MantineColor;

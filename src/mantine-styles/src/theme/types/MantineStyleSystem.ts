@@ -1,6 +1,6 @@
-import type { MantineNumberSize } from './MantineSize';
+import type { DefaultMantineNumberSize } from './MantineSize';
 
-type MantineStyleSystemValue = MantineNumberSize | (string & {});
+type MantineStyleSystemValue = DefaultMantineNumberSize | (string & {});
 
 export interface MantineStyleSystemProps {
   m?: MantineStyleSystemValue;
