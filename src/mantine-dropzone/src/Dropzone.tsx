@@ -3,7 +3,7 @@ import { useDropzone, FileRejection, Accept, FileWithPath } from 'react-dropzone
 import {
   DefaultProps,
   Selectors,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   LoadingOverlay,
   Box,
   useComponentDefaultProps,
@@ -21,10 +21,10 @@ export interface DropzoneProps
   extends DefaultProps<DropzoneStylesNames>,
     Omit<React.ComponentPropsWithRef<'div'>, 'onDrop'> {
   /** Padding from theme.spacing, or number to set padding in px */
-  padding?: MantineNumberSize;
+  padding?: DefaultMantineNumberSize;
 
   /** Border radius from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Dropzone statues */
   children: React.ReactNode;

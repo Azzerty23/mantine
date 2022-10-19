@@ -1,6 +1,6 @@
 import React, { useRef, forwardRef } from 'react';
 import { useMergedRef } from '@mantine/hooks';
-import { MantineSize } from '@mantine/core';
+import { DefaultMantineSize } from '@mantine/core';
 import useStyles from '../TimeInputBase.styles';
 
 interface AmPmSelectProps
@@ -15,7 +15,7 @@ interface AmPmSelectProps
   onChange(value: string, triggerShift: boolean): void;
 
   /** Colon text size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   unstyled?: boolean;
 }

@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize, MantineShadow } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineShadow } from '@mantine/styles';
 
 export interface PaperStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   shadow: MantineShadow;
   withBorder: boolean;
 }

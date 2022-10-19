@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -21,7 +21,7 @@ export interface DividerProps
   orientation?: 'horizontal' | 'vertical';
 
   /** Sets height in horizontal orientation and width in vertical */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Adds text after line in horizontal orientation */
   label?: React.ReactNode;

@@ -1,13 +1,13 @@
 import { createContext, useContext } from 'react';
-import { MantineNumberSize } from '@mantine/styles';
+import { DefaultMantineNumberSize } from '@mantine/styles';
 
 interface ListContextValue {
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
   center?: boolean;
   icon?: React.ReactNode;
   listStyleType?: string;
   withPadding?: boolean;
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 }
 
 export const ListContext = createContext<ListContextValue>(null);

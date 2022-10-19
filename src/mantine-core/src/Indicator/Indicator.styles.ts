@@ -2,13 +2,13 @@ import {
   createStyles,
   CSSObject,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   keyframes,
 } from '@mantine/styles';
 import { IndicatorPosition } from './Indicator.types';
 
 export interface IndicatorStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   size: number;
   color: MantineColor;
   position: IndicatorPosition;

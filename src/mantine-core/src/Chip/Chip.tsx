@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import { useId, useUncontrolled } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   MantineColor,
   Selectors,
   extractSystemStyles,
@@ -22,10 +22,10 @@ export interface ChipProps
   extends DefaultProps<ChipStylesNames, ChipStylesParams>,
     Omit<React.ComponentPropsWithRef<'input'>, 'size' | 'onChange'> {
   /** Chip radius from theme or number to set value in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Predefined chip size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Chip input type */
   type?: 'radio' | 'checkbox';

@@ -1,5 +1,11 @@
 import React from 'react';
-import { DefaultProps, Selectors, Text, MantineNumberSize, MantineColor } from '@mantine/core';
+import {
+  DefaultProps,
+  Selectors,
+  Text,
+  DefaultMantineNumberSize,
+  MantineColor,
+} from '@mantine/core';
 import type { SpotlightAction } from '../types';
 import type { DefaultActionProps, DefaultActionStylesNames } from '../DefaultAction/DefaultAction';
 import useStyles from './ActionsList.styles';
@@ -18,7 +24,7 @@ export interface ActionsListProps extends DefaultProps<ActionsListStylesNames> {
   onActionTrigger(action: SpotlightAction): void;
   highlightQuery: boolean;
   highlightColor: MantineColor;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export function ActionsList({

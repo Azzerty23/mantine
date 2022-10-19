@@ -1,8 +1,8 @@
-import { createStyles, MantineNumberSize, CSSObject, MantineTheme } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, CSSObject, MantineTheme } from '@mantine/styles';
 
 export interface MediaQueryStylesParams {
-  smallerThan: MantineNumberSize;
-  largerThan: MantineNumberSize;
+  smallerThan: DefaultMantineNumberSize;
+  largerThan: DefaultMantineNumberSize;
   styles: CSSObject | ((theme: MantineTheme) => CSSObject);
   query: string;
 }

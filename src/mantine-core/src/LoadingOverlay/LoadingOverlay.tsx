@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   getDefaultZIndex,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -40,7 +40,7 @@ export interface LoadingOverlayProps extends DefaultProps, React.ComponentPropsW
   exitTransitionDuration?: number;
 
   /** Value from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<LoadingOverlayProps> = {

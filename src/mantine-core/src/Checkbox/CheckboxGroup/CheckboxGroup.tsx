@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import { useUncontrolled } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
-  MantineSize,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
   useComponentDefaultProps,
 } from '@mantine/styles';
 import { Input, InputWrapperBaseProps, InputWrapperStylesNames } from '../../Input';
@@ -32,13 +32,13 @@ export interface CheckboxGroupProps
   orientation?: 'horizontal' | 'vertical';
 
   /** Spacing between checkboxes in horizontal orientation */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Space between label and inputs */
-  offset?: MantineNumberSize;
+  offset?: DefaultMantineNumberSize;
 
   /** Predefined label fontSize, checkbox width, height and border-radius */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Props spread to InputWrapper */
   wrapperProps?: Record<string, any>;

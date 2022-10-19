@@ -1,17 +1,17 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
 
 export interface SimpleGridBreakpoint {
-  maxWidth?: MantineNumberSize;
-  minWidth?: MantineNumberSize;
+  maxWidth?: DefaultMantineNumberSize;
+  minWidth?: DefaultMantineNumberSize;
   cols: number;
-  spacing?: MantineNumberSize;
-  verticalSpacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
+  verticalSpacing?: DefaultMantineNumberSize;
 }
 
 export interface SimpleGridStylesParams {
-  spacing: MantineNumberSize;
-  verticalSpacing: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
+  verticalSpacing: DefaultMantineNumberSize;
   breakpoints: SimpleGridBreakpoint[];
   cols: number;
 }

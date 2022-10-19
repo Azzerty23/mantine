@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { DefaultProps, Selectors, MantineNumberSize } from '@mantine/styles';
+import { DefaultProps, Selectors, DefaultMantineNumberSize } from '@mantine/styles';
 import { useScrollIntoView } from '@mantine/hooks';
 import { groupOptions } from '@mantine/utils';
 import { SelectScrollArea } from '../../Select/SelectScrollArea/SelectScrollArea';
@@ -28,7 +28,7 @@ export interface RenderListProps extends DefaultProps<RenderListStylesNames> {
   onMoveAll(): void;
   onMove(): void;
   height: number;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   listComponent?: React.FC<any>;
   limit?: number;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import { MantineNumberSize } from '@mantine/styles';
+import { DefaultMantineNumberSize } from '@mantine/styles';
 import { Group } from '../../Group/Group';
 import { Stack } from '../../Stack/Stack';
 
 interface InputsGroupProps {
-  spacing: MantineNumberSize;
-  offset: MantineNumberSize;
+  spacing: DefaultMantineNumberSize;
+  offset: DefaultMantineNumberSize;
   orientation: 'horizontal' | 'vertical';
   role?: string;
   children: React.ReactNode;

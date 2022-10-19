@@ -1,5 +1,5 @@
 import React from 'react';
-import { MantineSize } from '@mantine/styles';
+import { DefaultMantineSize } from '@mantine/styles';
 import { CloseButton } from '../../CloseButton';
 import { ChevronIcon } from './ChevronIcon';
 
@@ -7,7 +7,7 @@ export interface SelectRightSectionProps {
   shouldClear: boolean;
   clearButtonLabel?: string;
   onClear?: () => void;
-  size: MantineSize;
+  size: DefaultMantineSize;
   error?: any;
   // eslint-disable-next-line react/no-unused-prop-types
   disabled?: boolean;

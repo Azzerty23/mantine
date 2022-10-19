@@ -2,7 +2,7 @@ import React, { useState, useRef, forwardRef } from 'react';
 import { useUncontrolled, useMergedRef, useId } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineSize,
+  DefaultMantineSize,
   Selectors,
   InputWrapperStylesNames,
   Input,
@@ -24,7 +24,7 @@ export type TagInputStylesNames =
   | InputWrapperStylesNames;
 export interface TagInputProps extends DefaultProps<TagInputStylesNames>, BaseSelectProps {
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Properties spread to root element */
   wrapperProps?: Record<string, any>;

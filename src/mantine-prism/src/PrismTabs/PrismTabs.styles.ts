@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/core';
 
 interface PrismTabsStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export default createStyles((theme, { radius }: PrismTabsStylesParams) => ({

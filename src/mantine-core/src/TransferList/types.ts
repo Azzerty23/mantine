@@ -1,4 +1,4 @@
-import { MantineNumberSize } from '@mantine/styles';
+import { DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface TransferListItem {
   value: string;
@@ -12,7 +12,7 @@ export type TransferListData = [TransferListItem[], TransferListItem[]];
 export interface TransferListItemComponentProps {
   data: TransferListItem;
   selected: boolean;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export type TransferListItemComponent = React.FC<TransferListItemComponentProps>;

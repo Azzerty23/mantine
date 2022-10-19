@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, forwardRef } from 'react';
 import { useUncontrolled, useMergedRef, useDidUpdate, useScrollIntoView } from '@mantine/hooks';
-import { DefaultProps, MantineSize, MantineShadow, getDefaultZIndex } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, MantineShadow, getDefaultZIndex } from '@mantine/styles';
 import { groupOptions } from '@mantine/utils';
 import { SelectScrollArea } from './SelectScrollArea/SelectScrollArea';
 import { Input, useInputProps } from '../Input';
@@ -30,7 +30,7 @@ export interface SelectSharedProps<Item, Value> {
   filter?(value: string, item: Item): boolean;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Dropdown body appear/disappear transition */
   transition?: MantineTransition;

@@ -1,7 +1,7 @@
-import { createStyles, MantineSize } from '@mantine/styles';
+import { createStyles, DefaultMantineSize } from '@mantine/styles';
 
 interface ThumbStyles {
-  size: MantineSize;
+  size: DefaultMantineSize;
 }
 
 export const THUMB_SIZES = {

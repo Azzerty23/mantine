@@ -1,9 +1,9 @@
-import { createStyles, MantineColor, MantineNumberSize } from '@mantine/styles';
+import { createStyles, MantineColor, DefaultMantineNumberSize } from '@mantine/styles';
 
 interface TimelineItemStyles {
   bulletSize: number;
   color: MantineColor;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   align: 'right' | 'left';
   lineVariant: 'solid' | 'dashed' | 'dotted';
   lineWidth: number;

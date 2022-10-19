@@ -1,10 +1,15 @@
-import { createStyles, MantineColor, MantineNumberSize, MantineSize } from '@mantine/styles';
+import {
+  createStyles,
+  MantineColor,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
+} from '@mantine/styles';
 
 export interface StepStylesParams {
   color: MantineColor;
   iconSize: number;
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
   allowStepClick: boolean;
   iconPosition: 'right' | 'left';
   orientation: 'vertical' | 'horizontal';

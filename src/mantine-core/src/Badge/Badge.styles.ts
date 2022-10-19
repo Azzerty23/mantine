@@ -1,7 +1,7 @@
 import {
   createStyles,
-  MantineSize,
-  MantineNumberSize,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
   MantineColor,
   MantineGradient,
   MantineTheme,
@@ -11,8 +11,8 @@ export type BadgeVariant = 'light' | 'filled' | 'outline' | 'dot' | 'gradient';
 
 export interface BadgeStylesParams {
   color: MantineColor;
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
   gradient: MantineGradient;
   variant: BadgeVariant;
   fullWidth: boolean;
@@ -38,7 +38,7 @@ interface GetVariantStylesInput {
   theme: MantineTheme;
   variant: BadgeVariant;
   color: MantineColor;
-  size: MantineSize;
+  size: DefaultMantineSize;
   gradient: MantineGradient;
 }
 

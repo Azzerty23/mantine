@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize, MantineColor } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineColor } from '@mantine/styles';
 
 export interface BurgerStylesParams {
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   color: MantineColor;
   transitionDuration: number;
 }

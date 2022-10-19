@@ -1,4 +1,4 @@
-import { createStyles, MantineNumberSize, MantineColor, keyframes } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineColor, keyframes } from '@mantine/styles';
 
 const sizes = {
   xs: 3,
@@ -10,8 +10,8 @@ const sizes = {
 
 export interface ProgressStylesParams {
   color: MantineColor;
-  radius: MantineNumberSize;
-  size: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
+  size: DefaultMantineNumberSize;
   striped: boolean;
   animate: boolean;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { getSafeId } from '@mantine/utils';
 import { useUncontrolled, useId } from '@mantine/hooks';
-import { MantineColor, MantineNumberSize } from '@mantine/styles';
+import { MantineColor, DefaultMantineNumberSize } from '@mantine/styles';
 import { TabsContextProvider } from './Tabs.context';
 import { TABS_ERRORS } from './Tabs.errors';
 import { TabsValue, TabsOrientation, TabsVariant, TabsPlacement } from './Tabs.types';
@@ -44,7 +44,7 @@ export interface TabsProviderProps {
   color?: MantineColor;
 
   /** Tabs border-radius from theme.radius or number ti set value from theme, defaults to theme.defaultRadius */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Determines whether tabs should have inverted styles */
   inverted?: boolean;

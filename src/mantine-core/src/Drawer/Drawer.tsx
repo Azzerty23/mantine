@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useScrollLock, useFocusTrap, useFocusReturn } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineShadow,
   Selectors,
   MantineStyleSystemSize,
@@ -39,7 +39,7 @@ export interface DrawerProps
   shadow?: MantineShadow;
 
   /** Drawer body padding from theme or number for padding in px */
-  padding?: MantineNumberSize;
+  padding?: DefaultMantineNumberSize;
 
   /** Drawer z-index property */
   zIndex?: React.CSSProperties['zIndex'];

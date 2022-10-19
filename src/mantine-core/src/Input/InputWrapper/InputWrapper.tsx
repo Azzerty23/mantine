@@ -1,5 +1,10 @@
 import React, { forwardRef, Fragment } from 'react';
-import { DefaultProps, MantineSize, Selectors, useComponentDefaultProps } from '@mantine/styles';
+import {
+  DefaultProps,
+  DefaultMantineSize,
+  Selectors,
+  useComponentDefaultProps,
+} from '@mantine/styles';
 import { Box } from '../../Box';
 import { InputLabel, InputLabelStylesNames } from '../InputLabel/InputLabel';
 import { InputError, InputErrorStylesNames } from '../InputError/InputError';
@@ -63,7 +68,7 @@ export interface InputWrapperProps
   labelElement?: 'label' | 'div';
 
   /** Controls all elements font-size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Static css selector base */
   __staticSelector?: string;

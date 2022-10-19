@@ -2,8 +2,8 @@ import React from 'react';
 import {
   CloseButton,
   DefaultProps,
-  MantineSize,
-  MantineNumberSize,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
   Selectors,
 } from '@mantine/core';
 import useStyles from './DefaultValue.styles';
@@ -16,8 +16,8 @@ export interface TagInputValueProps
   label: string;
   onRemove(): void;
   disabled: boolean;
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
 }
 
 const buttonSizes = {

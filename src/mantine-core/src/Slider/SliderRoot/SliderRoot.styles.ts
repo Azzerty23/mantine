@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 interface SliderRootStyles {
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   disabled: boolean;
 }
 

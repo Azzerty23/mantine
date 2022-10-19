@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
   Selectors,
 } from '@mantine/styles';
@@ -20,7 +20,7 @@ export interface ColorSwatchProps
   size?: number;
 
   /** Swatch border-radius predefined from theme or number for px value */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** ColorSwatch children */
   children?: React.ReactNode;

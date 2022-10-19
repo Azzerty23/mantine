@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { Box } from '../Box';
 import useStyles, { SkeletonStylesParams } from './Skeleton.styles';
 
@@ -19,7 +19,7 @@ export interface SkeletonProps
   circle?: boolean;
 
   /** Radius from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Whether to show the animation effect */
   animate?: boolean;

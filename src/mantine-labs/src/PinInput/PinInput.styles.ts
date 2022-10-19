@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/core';
 
 interface PinInputStyles {
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
 }
 
 const sizes = {

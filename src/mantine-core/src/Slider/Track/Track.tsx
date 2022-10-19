@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, MantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
 import { Box } from '../../Box';
 import { Marks, MarksStylesNames } from '../Marks/Marks';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
@@ -12,8 +12,8 @@ export interface TrackProps extends DefaultProps<TrackStylesNames> {
   offset?: number;
   marksOffset?: number;
   marks: { value: number; label?: React.ReactNode }[];
-  size: MantineNumberSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineNumberSize;
+  radius: DefaultMantineNumberSize;
   color: MantineColor;
   min: number;
   max: number;

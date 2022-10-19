@@ -1,10 +1,10 @@
 import React from 'react';
 import { Global } from '@emotion/react';
-import type { MantineTheme, MantineSize } from './types';
+import type { MantineTheme, DefaultMantineSize } from './types';
 
 function assignSizeVariables(
   variables: Record<string, string>,
-  sizes: Record<MantineSize, number | string>,
+  sizes: Record<DefaultMantineSize, number | string>,
   name: string
 ) {
   Object.keys(sizes).forEach((size) => {

@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { createPolymorphicComponent, packSx } from '@mantine/utils';
 import { Box } from '../Box';
 
@@ -8,7 +8,7 @@ export interface BackgroundImageProps extends DefaultProps, React.ComponentProps
   src: string;
 
   /** Key of theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<BackgroundImageProps> = {

@@ -1,14 +1,14 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { packSx } from '@mantine/utils';
 import { Box } from '../Box';
 
 export interface SpaceProps extends DefaultProps {
   /** Width, set to add horizontal spacing */
-  w?: MantineNumberSize;
+  w?: DefaultMantineNumberSize;
 
   /** Height, set to add vertical spacing */
-  h?: MantineNumberSize;
+  h?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<SpaceProps> = {

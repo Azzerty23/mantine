@@ -1,11 +1,11 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineSize,
+  DefaultMantineSize,
   MantineColor,
   Selectors,
   extractSystemStyles,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
 } from '@mantine/styles';
 import { ForwardRefWithStaticComponents } from '@mantine/utils';
@@ -26,10 +26,10 @@ export interface CheckboxProps
   color?: MantineColor;
 
   /** Key of theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Predefined label font-size and checkbox width and height in px */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Checkbox label */
   label?: React.ReactNode;

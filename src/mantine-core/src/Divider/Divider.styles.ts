@@ -1,7 +1,12 @@
-import { createStyles, MantineNumberSize, MantineColor, MantineTheme } from '@mantine/styles';
+import {
+  createStyles,
+  DefaultMantineNumberSize,
+  MantineColor,
+  MantineTheme,
+} from '@mantine/styles';
 
 export interface DividerStylesParams {
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   variant: 'solid' | 'dashed' | 'dotted';
   color: MantineColor;
 }

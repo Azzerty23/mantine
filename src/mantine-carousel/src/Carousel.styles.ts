@@ -1,14 +1,14 @@
-import { createStyles, getSortedBreakpoints, MantineNumberSize } from '@mantine/core';
+import { createStyles, getSortedBreakpoints, DefaultMantineNumberSize } from '@mantine/core';
 import { CarouselBreakpoint } from './types';
 
 export interface CarouselStylesParams {
   controlSize: number;
-  controlsOffset: MantineNumberSize;
+  controlsOffset: DefaultMantineNumberSize;
   orientation: 'vertical' | 'horizontal';
   height: React.CSSProperties['height'];
   includeGapInSize: boolean;
   breakpoints: CarouselBreakpoint[];
-  slideGap: MantineNumberSize;
+  slideGap: DefaultMantineNumberSize;
 }
 
 export default createStyles(
@@ -27,7 +27,7 @@ export default createStyles(
     const horizontal = orientation === 'horizontal';
 
     // Container styles by slideGap (for includeGapInSize case)
-    const getContainerStyles = (gap: MantineNumberSize) => {
+    const getContainerStyles = (gap: DefaultMantineNumberSize) => {
       if (!includeGapInSize) return {};
 
       const slideGapValue = theme.fn.size({

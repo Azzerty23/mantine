@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import useStyles, { THUMB_SIZES } from './Thumb.styles';
 
 export type ThumbStylesNames = Selectors<typeof useStyles>;
@@ -11,7 +11,7 @@ interface Position {
 
 export interface ThumbProps extends DefaultProps<ThumbStylesNames> {
   position: Position;
-  size: MantineSize;
+  size: DefaultMantineSize;
   __staticSelector: string;
 }
 

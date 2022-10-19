@@ -1,8 +1,8 @@
-import { createStyles, MantineSize } from '@mantine/styles';
+import { createStyles, DefaultMantineSize } from '@mantine/styles';
 import { INPUT_SIZES } from '../Input';
 
 export interface MultiSelectStylesParams {
-  size: MantineSize;
+  size: DefaultMantineSize;
   invalid: boolean;
 }
 

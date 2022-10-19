@@ -1,8 +1,8 @@
-import { createStyles, MantineNumberSize, MantineSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize, DefaultMantineSize } from '@mantine/core';
 
 interface DefaultLabelStyles {
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
   disabled: boolean;
 }
 

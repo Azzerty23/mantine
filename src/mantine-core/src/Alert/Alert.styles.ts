@@ -2,7 +2,7 @@ import {
   createStyles,
   CSSObject,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineTheme,
 } from '@mantine/styles';
 
@@ -10,7 +10,7 @@ export type AlertVariant = 'filled' | 'outline' | 'light';
 
 export interface AlertStylesParams {
   color: MantineColor;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   variant: AlertVariant;
 }
 

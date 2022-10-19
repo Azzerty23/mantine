@@ -1,8 +1,8 @@
-import { createStyles, MantineSize } from '@mantine/styles';
+import { createStyles, DefaultMantineSize } from '@mantine/styles';
 import { THUMB_SIZES } from '../Thumb/Thumb.styles';
 
 interface SaturationStyles {
-  size: MantineSize;
+  size: DefaultMantineSize;
 }
 
 const SATURATION_HEIGHTS = {

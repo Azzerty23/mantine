@@ -1,7 +1,7 @@
-import { createStyles, INPUT_SIZES, MantineSize } from '@mantine/core';
+import { createStyles, INPUT_SIZES, DefaultMantineSize } from '@mantine/core';
 
 export interface TimeInputStylesParams {
-  size: MantineSize;
+  size: DefaultMantineSize;
 }
 
 export default createStyles((theme, { size }: TimeInputStylesParams) => ({

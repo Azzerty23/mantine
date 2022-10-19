@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import { usePagination } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   Selectors,
   useComponentDefaultProps,
@@ -46,13 +46,13 @@ export interface PaginationProps
   ) => string | undefined;
 
   /** Spacing between items from theme or number to set value in px, defaults to theme.spacing.xs / 2 */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Predefined item size or number to set width and height in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Predefined item radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Show/hide jump to start/end controls */
   withEdges?: boolean;

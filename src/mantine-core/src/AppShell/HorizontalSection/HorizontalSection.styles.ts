@@ -1,4 +1,4 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 import { getSortedBreakpoints } from './get-sorted-breakpoints/get-sorted-breakpoints';
 
 export type HorizontalSectionWidth = Partial<Record<string, string | number>>;
@@ -14,7 +14,7 @@ interface HorizontalSectionStyles {
   width: Partial<Record<string, string | number>>;
   height: string | number;
   position: HorizontalSectionPosition;
-  hiddenBreakpoint: MantineNumberSize;
+  hiddenBreakpoint: DefaultMantineNumberSize;
   fixed: boolean;
   zIndex: React.CSSProperties['zIndex'];
   section: 'navbar' | 'aside';

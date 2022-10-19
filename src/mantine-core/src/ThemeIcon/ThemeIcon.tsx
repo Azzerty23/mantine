@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineGradient,
   MantineColor,
   useComponentDefaultProps,
@@ -16,10 +16,10 @@ export interface ThemeIconProps
   children: React.ReactNode;
 
   /** Predefined width and height or number for width and height in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Predefined border-radius from theme.radius or number for border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Icon color from theme */
   color?: MantineColor;

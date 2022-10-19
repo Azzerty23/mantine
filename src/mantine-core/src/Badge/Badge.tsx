@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineSize,
-  MantineNumberSize,
+  DefaultMantineSize,
+  DefaultMantineNumberSize,
   MantineGradient,
   MantineColor,
   Selectors,
@@ -25,10 +25,10 @@ export interface BadgeProps extends DefaultProps<BadgeStylesNames, BadgeStylesPa
   gradient?: MantineGradient;
 
   /** Badge height and font size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Key of theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Sets badge width to 100% of parent element, hides overflow text with text-overflow: ellipsis */
   fullWidth?: boolean;

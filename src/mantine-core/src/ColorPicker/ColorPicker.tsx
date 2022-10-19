@@ -1,6 +1,11 @@
 import React, { useState, useRef, forwardRef } from 'react';
 import { useDidUpdate, useUncontrolled } from '@mantine/hooks';
-import { DefaultProps, MantineSize, Selectors, useComponentDefaultProps } from '@mantine/styles';
+import {
+  DefaultProps,
+  DefaultMantineSize,
+  Selectors,
+  useComponentDefaultProps,
+} from '@mantine/styles';
 import { Box } from '../Box';
 import { ColorSwatch } from '../ColorSwatch/ColorSwatch';
 import { convertHsvaTo, isColorValid, parseColor } from './converters';
@@ -46,7 +51,7 @@ export interface ColorPickerBaseProps {
   swatchesPerRow?: number;
 
   /** Predefined component size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 }
 
 export interface ColorPickerProps

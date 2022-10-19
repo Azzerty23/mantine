@@ -1,8 +1,8 @@
-import { createStyles, MantineColor, MantineNumberSize } from '@mantine/styles';
+import { createStyles, MantineColor, DefaultMantineNumberSize } from '@mantine/styles';
 
 interface MenuItemStylesParams {
   color: MantineColor;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export default createStyles((theme, { color, radius }: MenuItemStylesParams) => ({

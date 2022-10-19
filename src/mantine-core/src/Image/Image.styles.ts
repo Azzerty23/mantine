@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface ImageStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export default createStyles((theme, { radius }: ImageStylesParams) => ({

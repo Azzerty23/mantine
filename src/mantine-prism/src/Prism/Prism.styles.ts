@@ -1,10 +1,10 @@
-import { createStyles, MantineNumberSize } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/core';
 
 export interface PrismStylesParams {
   colorScheme: 'light' | 'dark';
   native: boolean;
   maxLineSize: number;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export default createStyles(

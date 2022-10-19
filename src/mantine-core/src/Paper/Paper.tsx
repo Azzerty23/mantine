@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineShadow,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -14,7 +14,7 @@ export interface PaperProps extends DefaultProps<never, PaperStylesParams> {
   shadow?: MantineShadow;
 
   /** Predefined border-radius value from theme.radius or number for border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Adds 1px border with theme.colors.gray[3] color in light color scheme and theme.colors.dark[4] in dark color scheme */
   withBorder?: boolean;

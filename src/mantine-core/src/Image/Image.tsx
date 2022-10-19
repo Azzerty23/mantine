@@ -1,7 +1,7 @@
 import React, { useState, forwardRef } from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   Selectors,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -32,7 +32,7 @@ export interface ImageProps
   height?: number | string;
 
   /** Predefined border-radius value from theme.radius or number for border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Enable placeholder when image is loading and when image fails to load */
   withPlaceholder?: boolean;

@@ -4,13 +4,13 @@ import {
   CSSObject,
   MantineColor,
   MantineGradient,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
 } from '@mantine/styles';
 
 export interface TextStylesParams {
   color: 'dimmed' | MantineColor;
   variant: 'text' | 'link' | 'gradient';
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   lineClamp: number;
   inline: boolean;
   inherit: boolean;

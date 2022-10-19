@@ -1,7 +1,7 @@
 import React from 'react';
 import { getSafeId } from '@mantine/utils';
 import { useUncontrolled, useId } from '@mantine/hooks';
-import { MantineNumberSize } from '@mantine/styles';
+import { DefaultMantineNumberSize } from '@mantine/styles';
 import { AccordionContextProvider } from './Accordion.context';
 import {
   AccordionValue,
@@ -55,7 +55,7 @@ export interface AccordionProviderProps<Multiple extends boolean = false> {
   variant?: AccordionVariant;
 
   /** border-radius from theme.radius or number to set value in px, will not be applied to default variant  */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 }
 
 export function AccordionProvider<Multiple extends boolean = false>({

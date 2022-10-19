@@ -1,5 +1,5 @@
 import React, { useState, forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, MantineColor, Selectors } from '@mantine/styles';
 import { Box } from '../../Box';
 import { Transition, MantineTransition } from '../../Transition';
 import useStyles from './Thumb.styles';
@@ -13,7 +13,7 @@ export interface ThumbProps extends DefaultProps<ThumbStylesNames> {
   position: number;
   dragging: boolean;
   color: MantineColor;
-  size: MantineNumberSize;
+  size: DefaultMantineNumberSize;
   label: React.ReactNode;
   onMouseDown(event: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>): void;
   labelTransition?: MantineTransition;

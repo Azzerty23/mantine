@@ -1,13 +1,13 @@
 import React from 'react';
 import { useUncontrolled } from '@mantine/hooks';
-import { MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { Group, GroupProps } from '../../Group';
 import { ChipGroupProvider } from '../ChipGroup.context';
 
 export interface ChipGroupProps<T extends boolean = false>
   extends Omit<GroupProps, 'value' | 'defaultValue' | 'onChange' | 'classNames' | 'styles'> {
   /** Key of theme.spacing or number to set gap in px */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Allow multiple values to be selected at a time */
   multiple?: T;

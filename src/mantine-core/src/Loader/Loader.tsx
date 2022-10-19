@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   DefaultProps,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineColor,
   MantineTheme,
   useMantineTheme,
@@ -28,7 +28,7 @@ const sizes = {
 
 export interface LoaderProps extends DefaultProps, React.ComponentPropsWithoutRef<'svg'> {
   /** Defines width of loader */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Loader color from theme */
   color?: MantineColor;

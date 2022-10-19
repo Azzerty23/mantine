@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { ForwardRefWithStaticComponents } from '@mantine/utils';
 import { Box } from '../Box';
 import { Col } from './Col/Col';
@@ -11,7 +11,7 @@ export interface GridProps extends DefaultProps, React.ComponentPropsWithRef<'di
   children: React.ReactNode;
 
   /** Spacing between columns predefined value from theme.spacing or number for gutter in px  */
-  gutter?: MantineNumberSize;
+  gutter?: DefaultMantineNumberSize;
 
   /** Should columns in the last row take 100% of grid width */
   grow?: boolean;

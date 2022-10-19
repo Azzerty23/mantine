@@ -1,5 +1,5 @@
 import React from 'react';
-import { DefaultProps, MantineSize, Selectors } from '@mantine/styles';
+import { DefaultProps, DefaultMantineSize, Selectors } from '@mantine/styles';
 import { randomId } from '@mantine/hooks';
 import { Text } from '../../Text/Text';
 import { Divider } from '../../Divider/Divider';
@@ -17,7 +17,7 @@ export interface SelectItemsProps extends DefaultProps<SelectItemsStylesNames> {
   itemsRefs?: React.MutableRefObject<Record<string, HTMLDivElement>>;
   onItemHover(index: number): void;
   onItemSelect(item: SelectItem): void;
-  size: MantineSize;
+  size: DefaultMantineSize;
   itemComponent: React.FC<any>;
   nothingFound?: React.ReactNode;
   creatable?: boolean;

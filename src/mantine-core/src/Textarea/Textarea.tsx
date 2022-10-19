@@ -3,7 +3,7 @@ import TextareaAutosize from 'react-textarea-autosize';
 import { useId } from '@mantine/hooks';
 import {
   DefaultProps,
-  MantineSize,
+  DefaultMantineSize,
   extractSystemStyles,
   useComponentDefaultProps,
 } from '@mantine/styles';
@@ -32,7 +32,7 @@ export interface TextareaProps
   wrapperProps?: Record<string, any>;
 
   /** Input size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Static selectors base */
   __staticSelector?: string;

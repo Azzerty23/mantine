@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface GridStylesParams {
-  gutter: MantineNumberSize;
+  gutter: DefaultMantineNumberSize;
   justify?: React.CSSProperties['justifyContent'];
   align?: React.CSSProperties['alignContent'];
 }

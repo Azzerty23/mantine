@@ -1,9 +1,9 @@
-import { createStyles, MantineNumberSize } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize } from '@mantine/styles';
 
 interface RenderListStyles {
   reversed: boolean;
   native: boolean;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 const ITEM_PADDING = 7;

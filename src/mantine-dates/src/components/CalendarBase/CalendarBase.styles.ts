@@ -1,8 +1,8 @@
-import { createStyles, MantineSize } from '@mantine/core';
+import { createStyles, DefaultMantineSize } from '@mantine/core';
 import { sizes as DAY_SIZES } from '../Month/Day/Day.styles';
 
 interface CalendarBaseStyles {
-  size: MantineSize;
+  size: DefaultMantineSize;
   fullWidth: boolean;
   amountOfMonths: number;
 }

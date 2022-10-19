@@ -1,8 +1,8 @@
-import { MantineSize } from '@mantine/styles';
+import { DefaultMantineSize } from '@mantine/styles';
 import { createContext, useContext } from 'react';
 
 interface RadioGroupContextValue {
-  size: MantineSize;
+  size: DefaultMantineSize;
   value: string;
   onChange(event: React.ChangeEvent<HTMLInputElement>): void;
   name: string;

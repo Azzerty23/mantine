@@ -1,6 +1,6 @@
 import React, { useRef, forwardRef, useState } from 'react';
 import { useMergedRef, clamp } from '@mantine/hooks';
-import { Text, MantineSize } from '@mantine/core';
+import { Text, DefaultMantineSize } from '@mantine/core';
 import { padTime } from '../pad-time/pad-time';
 import useStyles from '../TimeInputBase.styles';
 import type { createTimeHandler } from '../create-time-handler/create-time-handler';
@@ -17,7 +17,7 @@ interface TimeFieldProps
   withSeparator?: boolean;
 
   /** Colon text size */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Maximum possible value */
   max?: number;

@@ -1,7 +1,7 @@
-import { createStyles, MantineNumberSize, MantineTheme } from '@mantine/core';
+import { createStyles, DefaultMantineNumberSize, MantineTheme } from '@mantine/core';
 
 interface CodeDemoStylesParams {
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
 }
 
 export default createStyles((theme: MantineTheme, { radius }: CodeDemoStylesParams) => ({

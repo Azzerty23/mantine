@@ -7,7 +7,7 @@ import {
   ClassNames,
   Styles,
   StylesApiProvider,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineShadow,
   getDefaultZIndex,
   useComponentDefaultProps,
@@ -75,7 +75,7 @@ export interface PopoverBaseProps {
   zIndex?: React.CSSProperties['zIndex'];
 
   /** Radius from theme.radius or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Key of theme.shadow or any other valid css box-shadow value */
   shadow?: MantineShadow;

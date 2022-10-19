@@ -1,7 +1,7 @@
-import { createStyles, MantineSize, MantineColor } from '@mantine/styles';
+import { createStyles, DefaultMantineSize, MantineColor } from '@mantine/styles';
 
 export interface RadioStylesParams {
-  size: MantineSize;
+  size: DefaultMantineSize;
   color: MantineColor;
   transitionDuration: number;
   labelPosition: 'left' | 'right';

@@ -1,9 +1,14 @@
-import { createStyles, MantineNumberSize, MantineSize, MantineColor } from '@mantine/styles';
+import {
+  createStyles,
+  DefaultMantineNumberSize,
+  DefaultMantineSize,
+  MantineColor,
+} from '@mantine/styles';
 
 export interface SwitchStylesParams {
   color: MantineColor;
-  size: MantineSize;
-  radius: MantineNumberSize;
+  size: DefaultMantineSize;
+  radius: DefaultMantineNumberSize;
   labelPosition: 'left' | 'right';
   error: boolean;
 }

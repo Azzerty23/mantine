@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { Box } from '../../Box';
 import { AvatarGroupProvider } from './AvatarGroup.context';
 import useStyles from './AvatarGroup.styles';
@@ -9,7 +9,7 @@ export interface AvatarGroupProps extends DefaultProps, React.ComponentPropsWith
   children: React.ReactNode;
 
   /** Negative space between Avatars */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<AvatarGroupProps> = {};

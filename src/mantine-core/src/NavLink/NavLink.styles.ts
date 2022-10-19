@@ -1,10 +1,10 @@
-import { createStyles, MantineColor, MantineNumberSize } from '@mantine/styles';
+import { createStyles, MantineColor, DefaultMantineNumberSize } from '@mantine/styles';
 
 export interface NavLinkStylesParams {
   color: MantineColor;
   variant: 'filled' | 'light' | 'subtle';
   noWrap: boolean;
-  childrenOffset: MantineNumberSize;
+  childrenOffset: DefaultMantineNumberSize;
   alignIcon: 'top' | 'center';
 }
 

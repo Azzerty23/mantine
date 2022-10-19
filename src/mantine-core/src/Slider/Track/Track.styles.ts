@@ -1,9 +1,9 @@
-import { createStyles, MantineNumberSize, MantineColor } from '@mantine/styles';
+import { createStyles, DefaultMantineNumberSize, MantineColor } from '@mantine/styles';
 import { sizes } from '../SliderRoot/SliderRoot.styles';
 
 interface TrackStyles {
-  radius: MantineNumberSize;
-  size: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
+  size: DefaultMantineNumberSize;
   color: MantineColor;
   disabled: boolean;
   inverted: boolean;

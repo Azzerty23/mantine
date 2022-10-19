@@ -2,13 +2,13 @@ import {
   createStyles,
   CSSObject,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   MantineTheme,
 } from '@mantine/styles';
 
 export interface TooltipStylesParams {
   color: MantineColor;
-  radius: MantineNumberSize;
+  radius: DefaultMantineNumberSize;
   width: number | 'auto';
   multiline: boolean;
 }

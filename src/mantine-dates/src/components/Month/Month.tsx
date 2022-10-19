@@ -3,7 +3,7 @@ import {
   DefaultProps,
   Text,
   Box,
-  MantineSize,
+  DefaultMantineSize,
   Selectors,
   useComponentDefaultProps,
 } from '@mantine/core';
@@ -39,7 +39,7 @@ export interface MonthSettings {
   hideWeekdays?: boolean;
 
   /** Controls month days font-size and height */
-  size?: MantineSize;
+  size?: DefaultMantineSize;
 
   /** Set to true to make calendar take 100% of container width */
   fullWidth?: boolean;

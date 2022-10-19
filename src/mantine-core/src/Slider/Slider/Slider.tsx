@@ -3,7 +3,7 @@ import { useMergedRef, useMove, useUncontrolled, clamp } from '@mantine/hooks';
 import {
   DefaultProps,
   MantineColor,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
   useMantineTheme,
 } from '@mantine/styles';
@@ -28,10 +28,10 @@ export interface SliderProps
   color?: MantineColor;
 
   /** Track border-radius from theme or number to set border-radius in px */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 
   /** Predefined track and thumb size, number to set sizes in px */
-  size?: MantineNumberSize;
+  size?: DefaultMantineNumberSize;
 
   /** Minimal possible value */
   min?: number;

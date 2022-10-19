@@ -3,7 +3,7 @@ import {
   DefaultProps,
   MantineColor,
   Selectors,
-  MantineNumberSize,
+  DefaultMantineNumberSize,
   useComponentDefaultProps,
 } from '@mantine/styles';
 import { useId } from '@mantine/hooks';
@@ -41,7 +41,7 @@ export interface AlertProps
   closeButtonLabel?: string;
 
   /** Radius from theme.radius, or number to set border-radius in px, defaults to theme.defaultRadius */
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<AlertProps> = {

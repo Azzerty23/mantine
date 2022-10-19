@@ -1,7 +1,7 @@
-import { createStyles, MantineSize } from '@mantine/core';
+import { createStyles, DefaultMantineSize } from '@mantine/core';
 
 interface DayStyles {
-  size: MantineSize;
+  size: DefaultMantineSize;
   fullWidth: boolean;
   hideOutsideDates: boolean;
 }

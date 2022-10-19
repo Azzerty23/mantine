@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, MantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
+import { DefaultProps, DefaultMantineNumberSize, useComponentDefaultProps } from '@mantine/styles';
 import { Box } from '../Box';
 import useStyles, { SimpleGridBreakpoint, SimpleGridStylesParams } from './SimpleGrid.styles';
 
@@ -13,10 +13,10 @@ export interface SimpleGridProps
   cols?: number;
 
   /** Spacing between columns, used when none of breakpoints can be applied */
-  spacing?: MantineNumberSize;
+  spacing?: DefaultMantineNumberSize;
 
   /** Vertical spacing between columns, used when none of breakpoints can be applied  */
-  verticalSpacing?: MantineNumberSize;
+  verticalSpacing?: DefaultMantineNumberSize;
 }
 
 const defaultProps: Partial<SimpleGridProps> = {

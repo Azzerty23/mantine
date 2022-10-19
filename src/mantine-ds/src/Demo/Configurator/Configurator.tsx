@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MantineNumberSize, useMantineTheme } from '@mantine/core';
+import { DefaultMantineNumberSize, useMantineTheme } from '@mantine/core';
 import { Prism } from '@mantine/prism';
 import controls, { ControlProps } from './controls';
 import { propsToString } from './props-to-string';
@@ -14,7 +14,7 @@ interface ConfiguratorProps {
   center?: boolean;
   props: ControlProps[];
   filter?: string[];
-  radius?: MantineNumberSize;
+  radius?: DefaultMantineNumberSize;
   background?: string;
 }
 
